@@ -1,0 +1,310 @@
+
+
+//Grid
+.container-fluid
+{
+	width:100%;
+}
+.col-1
+{
+	width:8.33%;
+}
+.col-2
+{
+	width:16.66%;
+}
+.col-3
+{
+	width:25%
+}
+.col-4
+{
+	width:33.33%
+}
+.col-5
+{
+	width:41.66%
+}
+.col-6
+{
+	width: 50%
+}
+.col-7
+{
+	width:58.33%
+}
+.col-8
+{
+	width:66.66%
+}
+.col-9
+{
+	width: 75%
+}
+.col-10
+{
+	width: 83.33%
+}
+.col-11
+{
+	width: 91.66%
+}
+.col-12
+{
+	width: 100%;
+}
+[class*="col-"]
+{
+	padding: 0 12px;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+.f-wrap
+{
+	flex-wrap: wrap;
+}
+
+.text-center
+{
+	text-align: center;
+}
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+
+.j-center
+{
+	justify-content: center;
+}
+.j-right
+{
+	justify-content: flex-end;
+}
+
+.j-left
+{
+	justify-content: flex-start;
+}
+.w-100
+{
+	width: 100%
+}
+.a-center
+{
+    align-items: center;
+}
+
+
+
+//User
+.container{
+    padding-bottom: 30px;
+
+    .title{
+        margin: 3rem 0 ;
+    }
+}
+
+.banner, .banner-table{
+    width: 100%;
+    margin-bottom: 3rem;
+    background-image: url(../../Images/lunchbg.jpeg);
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    height: 30rem;
+    border-radius: 1rem;
+    align-items: end;
+    color: #fff;
+
+    h1{
+        margin-bottom: 9rem;
+        margin-left: 4rem;
+        font-size: 5rem;
+    }
+}
+
+.banner-table{
+    margin-top: 4rem;
+    background-image: url(../../Images/Slider-food.jpeg);
+
+    h1{
+        margin: none;
+    }
+}
+
+.item{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow:0px 2px 5px #a4a3a3;
+    height: 12rem;
+
+    button{
+        width: 7rem;
+        height: 5rem;
+        border-radius: 1rem;
+        background: red;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        transition: all 0.1s ease-in;
+        &:hover{
+            background-color: #fff;
+            color: red;
+            box-shadow: 0 0 10px red;
+        }
+    }
+
+}   
+
+.info{
+    padding-bottom: 1rem;
+    h2{
+        letter-spacing: 0.5px;
+    }
+    
+    p{
+        margin-top: 0.5rem;
+        color: grey;
+        font-weight: 500;
+    }
+    p span{
+        font-weight: 700;
+    }
+
+    h4{
+        margin-top: 0.5rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+    }
+    h4 span{
+        color: grey;
+    }
+}
+
+.logo{
+    img{
+    
+        width: 7rem;
+        height: 6rem;
+    }
+
+}
+
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+}
+.bg-blue{
+    background-color: blue;
+}
+
+.total{
+
+    margin-top: 5rem;
+    width: 83.33%;
+    box-shadow: 0px 0px 10px #a4a3a3;
+    height: 10rem;
+    padding-left: 3rem;
+
+    .col-2, .col-12, .col-10{
+        padding: 0;
+    }
+
+    .col-10{
+        margin: auto 0;
+    }
+    // border: 1px solid #cecece;
+    h1{
+
+        font-size: 3rem;
+        letter-spacing: 2px;
+        span{
+            font-size: 2.5rem;
+            padding-left: 3rem;
+            font-weight: 500;
+            letter-spacing: normal;
+        }
+        
+    }
+
+    .order-btn{
+        width: 100%;
+        height: 10rem;
+        background: red;
+        color: #fff;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        font-weight: 800;
+        transition: all 0.1s ease-in;
+        &:hover{
+            background-color: #fff;
+            color: red;
+            box-shadow: 0 0 10px red;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .item, .banner, .total{
+        width: 100%;
+    }
+
+   .total{
+
+        align-items: center;
+
+    .col-10{
+        width: 70%;
+    }
+
+    .col-2{
+        width: 30%;
+    }
+
+        h1{
+            font-size: 2.5rem;
+            letter-spacing: 1.5px;
+            span{
+                font-size: 2rem;
+                padding-left: 1rem;
+                font-weight: 500;
+                letter-spacing: normal;
+            }      
+        }
+
+
+        .order-btn{
+            width: 100%;
+            height: 10rem;
+            background: red;
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+            transition: all 0.1s ease-in;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            &:hover{
+                background-color: #fff;
+                color: red;
+                box-shadow: 0 0 10px red;
+            }
+        }
+   }
+
+    
+  }

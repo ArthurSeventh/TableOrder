@@ -1,0 +1,414 @@
+//grid
+.container-fluid
+{
+	width:100%;
+}
+.col-1
+{
+	width:8.33%;
+}
+.col-2
+{
+	width:16.66%;
+}
+.col-3
+{
+	width:25%
+}
+.col-4
+{
+	width:33.33%
+}
+.col-5
+{
+	width:41.66%
+}
+.col-6
+{
+	width: 50%
+}
+.col-7
+{
+	width:58.33%
+}
+.col-8
+{
+	width:66.66%
+}
+.col-9
+{
+	width: 75%
+}
+.col-10
+{
+	width: 83.33%
+}
+.col-11
+{
+	width: 91.66%
+}
+.col-12
+{
+	width: 100%;
+}
+[class*="col-"]
+{
+	padding: 0 12px;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+.f-wrap
+{
+	flex-wrap: wrap;
+}
+
+.text-center
+{
+	text-align: center;
+}
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+
+.j-center
+{
+	justify-content: center;
+}
+.j-right
+{
+	justify-content: flex-end;
+}
+
+.j-left
+{
+	justify-content: flex-start;
+}
+.w-100
+{
+	width: 100%
+}
+
+.line{
+    height: 1px;
+    background-color: #cecece;
+    margin-bottom: 5rem;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.s-between{
+    justify-content: space-between;
+}
+
+.s-around{
+    justify-content: space-around;
+}
+
+.p-l-0{
+    padding-left: 0px!important;
+}
+
+.p-r-0{
+    padding-right: 0px!important;
+}
+
+.red{
+    color: red;
+}
+//Food
+.food-wrapper{
+    padding-bottom: 5rem;
+}
+
+.bg-menu, .bg-lunch, .bg-dinner{
+    
+    background-size: cover;
+    height: 44rem;
+    background-attachment: fixed;
+    align-items: center;
+
+    h1{
+        font-size: 10rem;
+        color: white;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px #333;
+        font-weight: 400;
+    }
+}
+.bg-menu{
+    background-image: url(../../Images/crab-salad.jpeg);
+    background-position-y:center;
+} 
+.bg-lunch{
+    background-image: url(../../Images/lunchbg.jpeg);
+    background-position-y:center;
+}
+.bg-dinner{
+    background-image: url(../../Images/dinner8.webp);
+    background-position-y:top;
+    background-position-x:left;
+
+}
+
+.menu-item-title
+{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.menu-item{
+    padding-bottom: 7rem;
+    padding-top: 1rem;
+    img{
+        width: 100%;
+        height: 25rem;
+        border: 1px solid #e8e7e7;
+    }
+    h3{
+        margin: 1rem 0 ;
+        letter-spacing: 1px;
+    }
+
+    p{
+        margin-bottom: 1rem;
+        text-align: center;
+        text-align: justify;
+    }
+    .btn-danger, .btn-add{
+        width: 10rem;
+        height: 4rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease-in;
+        color: #fff;
+
+    }
+
+    .btn-add{
+        background-color: #000;
+        &:hover{
+            background-color:var(--CrimsonShadow);
+            
+        }
+    }
+    .btn-danger{
+        background-color: red;
+        &:hover{
+            background-color:#fff;
+            color: red;
+            border: 2px solid red
+        }
+    }
+    .price{
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+}
+
+.container{
+
+    padding-bottom: 4rem;
+    .col-3{
+        margin: 0 2rem;
+    }
+}
+
+.card, .plus{
+    width: 5rem;
+    height: 5rem;
+    background-color: #232323;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 11rem;
+    color: #fff;
+    box-shadow: 0 0 7px #3b3b3b;
+    transition: all 0.2s ease-in-out;
+
+
+    a{
+        color:#fff;
+    }
+
+    &:hover{
+        background-color: crimson;
+        box-shadow: 0 0 8px #ff0000;
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:active{
+        box-shadow:0px 1px 4px 2px #ff0000;
+    }
+}
+
+.plus{
+    right: 3rem;
+    bottom: 19rem;
+    background-color: var(--BlueShadow);
+    box-shadow: 0 0 8px var(--BlueShadow);
+    &:hover{
+        background-color: crimson;
+        box-shadow: 0 0 8px crimson;
+        transition: all 0.2s ease-in;
+    }
+
+    &:active{
+        box-shadow:0px 1px 4px 2px #ff0000;
+    }
+}
+
+.number{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 152px;
+    right: 20px;
+    box-shadow: 1px 1px 10px #b6b3b4;
+    color: #000;
+    font-weight: 600;
+}
+
+.add-product{
+    background-color: #fff;
+    width: 60rem;
+    height: auto;
+    position: fixed;
+    animation : slide_in 0.3s forwards;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 #333;
+    // .add-name{
+    //     padding-left: 0px;
+    // }
+    label{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    // animation : slide_out 0.3s forwards;
+
+    @keyframes slide_in{
+        from{
+            top:50%;
+            right:0;
+            // transform: translate(50%, -50%);
+            transform: translate(0, -50%);
+
+        }to{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+     }
+     @keyframes slide_out{
+        from{
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+           
+        }to{
+            top:50%;
+            right:0;
+            transform: translate(50%, -50%);
+        }
+     }
+}
+
+.add-product{
+
+    h1{
+        margin-bottom: 3rem;
+        letter-spacing: 2px;
+    }
+    input, select{
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    border: 2px solid #000;
+   }
+        button{
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            height: 4rem;
+            background-color: #000;
+            color: #fff;
+            border-radius: 0.5rem;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        .delete-icon{
+            svg{
+                padding: 1rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                &:hover{
+                    color: red;
+                    transform: scale(1.2);
+                    transition: all 0.3s ease-out;
+                }
+            }
+        }
+ }
+
+@media screen and (max-width: 1100px) {
+
+    .container{
+        .col-3{
+            margin: 0 0;
+            width: 50%;
+        }
+    }
+
+    .Breakfast-food {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container{
+
+        .col-3{
+            width: 80%;
+        }
+
+        .Breakfast-food{
+            justify-content: center;
+        }
+  }
+  .add-product{
+    width: 93%;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .add-product{
+    width: 93%;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}

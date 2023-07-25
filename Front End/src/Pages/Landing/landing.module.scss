@@ -1,0 +1,426 @@
+//grid
+.container-fluid
+{
+	width:100%;
+}
+.col-1
+{
+	width:8.33%;
+}
+.col-2
+{
+	width:16.66%;
+}
+.col-3
+{
+	width:25%
+}
+.col-4
+{
+	width:33.33%
+}
+.col-5
+{
+	width:41.66%
+}
+.col-6
+{
+	width: 50%
+}
+.col-7
+{
+	width:58.33%
+}
+.col-8
+{
+	width:66.66%
+}
+.col-9
+{
+	width: 75%
+}
+.col-10
+{
+	width: 83.33%
+}
+.col-11
+{
+	width: 91.66%
+}
+.col-12
+{
+	width: 100%;
+}
+[class*="col-"]
+{
+	padding: 0 12px;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+.f-wrap
+{
+	flex-wrap: wrap;
+}
+
+.text-center
+{
+	text-align: center;
+}
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+
+.j-center
+{
+	justify-content: center;
+}
+.j-right
+{
+	justify-content: flex-end;
+}
+
+.j-left
+{
+	justify-content: flex-start;
+}
+.w-100
+{
+	width: 100%
+}
+
+.line{
+    height: 1px;
+    background-color: #cecece;
+    margin-bottom: 5rem;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.s-between{
+    justify-content: space-between;
+}
+
+.s-around{
+    justify-content: space-around;
+}
+
+//Food
+
+
+.logo{
+    img{
+        margin-left: 1rem;
+        margin-left: 7rem;
+        margin-top: 4rem;
+        width: 100%;
+    }
+}
+
+.login-btn{
+    button{
+        width: 9rem;
+        margin-right: 2rem;
+        height: 4rem;
+        border-radius: 3px;
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem;
+    }
+    .log-btn{
+        background-color: crimson;
+        border: 2px solid crimson;
+        color: #fff;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        &:hover {
+            border-color:#fff;
+            transform: scale(1.1);
+        }
+    }
+
+    .regist-btn{
+        background-color: var(--BlueBackGround);
+        border: 3px solid var(--BlueBackGround);
+        color: #fff;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        &:hover {
+            border-color:#fff;
+            transform: scale(1.1);
+        }
+    }
+
+}
+.bg-header{
+    // height: 70rem;
+    background-image: url(.././../Images/burger-with-gradient.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+
+    h1{
+        margin-top: 15rem; 
+        margin-bottom: 3rem;
+        letter-spacing: 3px;
+        font-size: 3.5rem;
+    }
+    h3{
+        letter-spacing: 2px;
+        font-size: 1.5em;
+    }
+    h2{
+        margin-top: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .btn-menu, .btn-order{
+        width: 14rem;
+        height: 4.5rem;
+        background-color: transparent;
+        border: 3px solid #fff;
+        color: #fff;
+        margin-left: 3rem;
+        margin-top: 7rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 15rem;
+    }
+
+    .service{
+        color: crimson;
+        margin-right: 1rem;
+        text-transform: uppercase;
+    }
+
+    .hospitality{
+        color: var(--BlueBackGround);
+        margin-left: 1rem;
+        text-transform: uppercase;
+    }
+
+    .btn-menu{
+        &:hover{
+            border-color: crimson;
+            background-color: crimson;
+            // color: crimson;
+            border-width: 4px;
+            transform: scale(1.2);
+            transition: all 0.2s ease-in;
+   
+        }
+    }
+    .btn-order{
+        &:hover{
+            border-color: var(--BlueBackGround);
+            background-color: var(--BlueBackGround);
+            // color: var(--BlueBackGround);
+            border-width: 4px;
+            transform: scale(1.2);
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+.bg-dark{
+    background-color: black;
+    color: #fff;
+}   
+
+.bg-menu{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+    // background-image: url(../../Images/landing1.jpeg);
+    // background-size: contain; 
+}
+
+.lunch-menu{
+    width: 50%;
+    padding: 5rem;
+
+    .line{
+        width: 20%;
+        border-radius: 90%;
+        margin-bottom: 3rem;
+    }
+    .title{
+        padding-bottom: 3rem;
+    }
+
+    .item{
+        padding: 1rem 0;
+        .col-6{
+            padding: 0;
+        }
+        h3{
+            margin-left: 0;
+            font-weight: bold;
+            font-size: 2.3rem;
+        }
+    }
+
+}
+.intro{
+    background-image: url(../../Images/info.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 70rem;
+    padding: 7rem 0;
+
+    .bg-trans{
+        width: 50%;
+        height: 362px;
+        background-color: rgba(0,0,0,0.8);
+        padding: 6rem;
+        color: #fff;
+        text-align: left;
+
+        h2{
+            margin-bottom: 3rem;
+            letter-spacing: 1px;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+
+        .intro-content{
+            margin: auto 0;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .container{
+        .col-3{
+            margin: 0 0;
+            width: 50%;
+        }
+    }
+
+    .Breakfast-food {
+        justify-content: start;
+    }
+
+   .intro{
+    .bg-trans{
+        width: 50%;
+        height: 362px;
+        background-color: rgba(0,0,0,0.8);
+        padding: 4rem;
+        color: #fff;
+        text-align: left;
+
+        h2{
+            margin-bottom: 3rem;
+            margin-top: 0;
+            letter-spacing: 0px;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+
+        .intro-content{
+            margin: auto 0;
+        }
+    }
+   }
+
+   .logo{
+    width: 30%;
+    img{
+        margin-left: 0rem;
+    }
+}
+.login-btn{
+    width: 70%;
+    button{
+        margin-top: 1.8rem;
+    }
+}
+
+}
+
+@media screen and (max-width: 800px) {
+    .intro{  
+
+        .bg-trans{
+    
+            h2{
+
+                font-size: 3rem;
+            }
+
+    
+            .intro-content{
+                margin: auto 0;
+            }
+        }
+
+        
+        .bg-trans{
+            width: 100%;
+        }
+    }
+
+    .bg-header {
+
+        h1{
+            font-size: 2.5rem;
+        }
+
+        h3{
+            font-size: 1.8rem;
+        }
+        .logo{
+            width: 50%;
+            img{
+                margin-left: 0rem;
+            }
+        }
+        .login-btn{
+            width: 50%;
+            button{
+                margin-top: 1.8rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .lunch-menu{
+        width: 100%;
+    }
+    .bg-menu{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+
+    
+}

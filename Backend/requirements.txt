@@ -1,0 +1,11 @@
+flask
+apiflask
+psycopg2-binary
+sqlalchemy
+flask-sqlalchemy
+python-dotenv
+marshmallow_sqlalchemy
+flask_migrate
+flask-cors
+flask_jwt_extended
+unidecode

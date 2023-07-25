@@ -1,0 +1,185 @@
+
+
+//Grid
+.container-fluid
+{
+	width:100%;
+}
+.col-1
+{
+	width:8.33%;
+}
+.col-2
+{
+	width:16.66%;
+}
+.col-3
+{
+	width:25%
+}
+.col-4
+{
+	width:33.33%
+}
+.col-5
+{
+	width:41.66%
+}
+.col-6
+{
+	width: 50%
+}
+.col-7
+{
+	width:58.33%
+}
+.col-8
+{
+	width:66.66%
+}
+.col-9
+{
+	width: 75%
+}
+.col-10
+{
+	width: 83.33%
+}
+.col-11
+{
+	width: 91.66%
+}
+.col-12
+{
+	width: 100%;
+}
+[class*="col-"]
+{
+	padding: 0 12px;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+.f-wrap
+{
+	flex-wrap: wrap;
+}
+
+.text-center
+{
+	text-align: center;
+}
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+
+.j-center
+{
+	justify-content: center;
+}
+.j-right
+{
+	justify-content: flex-end;
+}
+
+.j-left
+{
+	justify-content: flex-start;
+}
+.w-100
+{
+	width: 100%
+}
+.a-center
+{
+    align-items: center;
+}
+
+
+
+//User
+.container{
+    padding-bottom: 30px;
+    padding-top: 3rem;
+}
+
+.banner{
+    background-image: url(../../Images/user.jpeg);
+    background-size: cover;
+    // background-attachment: fixed;
+    height: 250px;
+    border-radius: 1rem;
+    align-items: end;
+    color: #fff;
+
+    h1{
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+    }
+}
+
+.item{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow:0px 2px 5px #a4a3a3;
+    height: 12rem;
+
+    button{
+        width: 7rem;
+        height: 5rem;
+        border-radius: 1rem;
+        background: red;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: #fff;
+            color: red;
+            box-shadow: 0 0 10px red;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+}   
+
+.info{
+    padding-bottom: 1rem;
+    h2{
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+    }
+    
+    p{
+        margin-top: 0.5rem;
+        color: grey;
+        font-weight: 500;
+    }
+    p span{
+        font-weight: 700;
+    }
+}
+
+.logo{
+    img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .item, .banner{
+        width: 100%;
+    }
+  }
